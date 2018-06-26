@@ -10,5 +10,5 @@ I've created it after I found a couple MSP430 chips I bought years ago and tried
 
 By my opinion they are nowadays inferior to STM32 if compare by performance and capabilities for given price, but comparable
 or better than 8-bit AVRs (popular in Arduinos). But programming is simple and they have SOIC and even DIP packages -
-valuable for those who have troubles with TSSOP / LQFP.
+valuable for those who have troubles with TSSOP / LQFP. Also they (like STM32 or LPC) have UART bootloader which allows to start working with them even without special programming hardware.
 See [MSP430G2553IN20](http://www.ti.com/product/MSP430G2553) for example.
