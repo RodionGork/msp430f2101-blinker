@@ -12,3 +12,8 @@ By my opinion they are nowadays inferior to STM32 if compare by performance and 
 or better than 8-bit AVRs (popular in Arduinos). But programming is simple and they have SOIC and even DIP packages -
 valuable for those who have troubles with TSSOP / LQFP. Also they (like STM32 or LPC) have UART bootloader which allows to start working with them even without special programming hardware.
 See [MSP430G2553IN20](http://www.ti.com/product/MSP430G2553) for example.
+
+**Important UPD:** don't erase the whole memory unless really necessary -
+it contains also factory clock calibration settings. Usually it is enough
+to erais main flash memory only, but password file is needed. It should
+contain the bytes of interrupt vector table. See comments in `burn.sh` also.
